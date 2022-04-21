@@ -3,9 +3,9 @@ module.exports = {
     aliases: ["p"],
     async execute(message, args, MessageEmbed, Util, client){
         const embed = new MessageEmbed()
-            .setTitle('Hola mundo')
-            .setDescription(message.author.username)
-            .setColor("GREEN")
+            .setTitle('Pong 🏓')
+            .setDescription(`Mi ping es de ${client.ws.ping}ms`)
+            .setColor("RANDOM")
         message.channel.send({ embeds: [embed] });
     },
 };
