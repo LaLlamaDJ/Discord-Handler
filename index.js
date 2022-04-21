@@ -36,7 +36,6 @@ process.on("uncaughtExceptionMonitor", (err, origin) => {
   console.log(err, origin);
 });
 process.on("multipleResolves", (type, promise, reason) => {
-  if (reason.toLocaleString() === "Error: Cannot perform IP discovery - socket closed") return;
   console.log(" [antiCrash] :: Multiple Resolves");
   console.log(type, promise, reason);
 });
