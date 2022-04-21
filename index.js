@@ -1,7 +1,16 @@
 const { Client, Intents, Collection, MessageEmbed, Util } = require("discord.js");
 const fs = require("fs");
 const client = new Client({
-  intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
+  intents: 32767,
+  presence: {
+    status: "dnd",
+    activities: [
+      {
+      name: "Some games...",
+      type: "PLAYING"
+    }
+  ]
+  }
 });
 const { token } = require(`${__dirname}/src/public/botconfig.json`);
 const { comandos } = require(`${__dirname}/src/utils/handler/comandos.js`);
