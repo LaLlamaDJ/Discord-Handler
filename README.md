@@ -22,5 +22,10 @@ module.exports = {
 ```
 Para finalizar hacer tus comandos y disfrutar del handler! <3
 
+# Soporte
+Mi user: Matt.7w7#2112
+Mi bot: [Click Aqui](https://dsc.gg/sanctuary-bot)
+Servidor de soporte: [Beta](https://discord.gg/PqFmHfXans)
+
 # Repositorio original
 https://github.com/SystemTheCow/discord-js-v13/tree/Command-y-Event-Handler
